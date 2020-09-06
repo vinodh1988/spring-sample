@@ -32,9 +32,16 @@ class DemoApplicationTests {
 	}
 
 	@Test
-	public void retrieveDetailsForCourse() throws Exception {
+	public void  checkThis() throws Exception {
 	
 		mockMvc.perform(get("/api/greet"))
+			    .andExpect(status().isOk());
+	}
+	
+	@Test
+	public void checkThisToo() throws Exception {
+	
+		mockMvc.perform(get("/api/greet2"))
 			    .andExpect(status().isOk());
 	}
 }

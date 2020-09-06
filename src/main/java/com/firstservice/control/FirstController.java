@@ -13,6 +13,10 @@ public class FirstController {
 	  return "Hi!!! Spring boot is running";
   }
   
+  @GetMapping("/greet2")
+  public String greet2() {
+	  return "Hi!!! Spring boot2 is running and working";
+  }
   @GetMapping("/people")
   public String[] people() {
 	  return n;
