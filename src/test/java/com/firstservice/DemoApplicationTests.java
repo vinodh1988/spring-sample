@@ -41,7 +41,7 @@ class DemoApplicationTests {
 	@Test
 	public void checkThisToo() throws Exception {
 	
-		mockMvc.perform(get("/api/greet2"))
+		mockMvc.perform(get("/api/greet3"))
 			    .andExpect(status().isOk());
 	}
 }
